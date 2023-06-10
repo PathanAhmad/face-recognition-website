@@ -78,7 +78,7 @@ class App extends Component {
   }
 
   fetchClarifai = () => {
-    fetch('https://face-detection-website-by-pathan-ahmad-y8c4.onrender.com/imageurl', {
+    fetch('https://face-recognition-website-backend.onrender.com/imageurl', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -89,7 +89,7 @@ class App extends Component {
 
       .then(result => {
         if (result) {
-          fetch('https://face-detection-website-by-pathan-ahmad-y8c4.onrender.com/image', {
+          fetch('https://face-recognition-website-backend.onrender.com/image', {
             method: 'put',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
